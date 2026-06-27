@@ -29,7 +29,7 @@
     }
 
     main {
-      max-width: 820px;
+      max-width: 840px;
       margin: 0 auto;
       padding: 64px 24px;
     }
@@ -40,7 +40,7 @@
 
     h1 {
       margin: 0 0 8px;
-      font-size: 2.2rem;
+      font-size: 2.25rem;
       font-weight: 700;
       letter-spacing: -0.03em;
     }
@@ -84,7 +84,7 @@
     }
 
     li {
-      margin: 6px 0;
+      margin: 8px 0;
     }
 
     a {
@@ -94,6 +94,14 @@
 
     a:hover {
       text-decoration: underline;
+    }
+
+    .paper-title {
+      font-weight: 500;
+    }
+
+    .paper-desc {
+      color: var(--muted);
     }
 
     footer {
@@ -144,24 +152,46 @@
     </section>
 
     <section>
-      <h2>Projects</h2>
+      <h2>Papers</h2>
       <ul>
         <li>
-          <a href="https://github.com/MagnusU0001F984/MagnusChess">MagnusChess</a> —
-          a UCI chess engine with classical search and MNUE evaluation.
+          <a class="paper-title" href="./Magnus_Model.pdf">Magnus Model</a>
+          <span class="paper-desc">
+            — a theoretical framework related to algorithms, data structures,
+            and computational modeling.
+          </span>
         </li>
+
         <li>
-          <a href="https://github.com/MagnusU0001F984/MagnusMNUE">MagnusMNUE</a> —
-          neural evaluation files and related resources for MagnusChess.
+          <a class="paper-title" href="./The%20Magnus%20Framework%20for%20Fixed-Matrix%20Many-RHS%20Linear%20Systems%20over%20GF%282%29%20From%20Bit-Packed%20Elimination%20to%20M4RI-Accelerated%20Batch%20Solving.pdf">
+            The Magnus Framework for Fixed-Matrix Many-RHS Linear Systems over GF(2)
+          </a>
+          <span class="paper-desc">
+            — from bit-packed elimination to M4RI-accelerated batch solving.
+          </span>
+        </li>
+
+        <li>
+          <a class="paper-title" href="./Vhm%20Msv%20verified%20heuristic%20memory.pdf">
+            VHM/MSV: Verified Heuristic Memory
+          </a>
+          <span class="paper-desc">
+            — notes on verified heuristic memory and related computational structures.
+          </span>
         </li>
       </ul>
     </section>
 
     <section>
-      <h2>Papers</h2>
+      <h2>Projects</h2>
       <ul>
         <li>
-          <a href="./Magnus_Model.pdf">Magnus Model</a>
+          <a href="https://github.com/MagnusU0001F984/MagnusChess">MagnusChess</a>
+          — a UCI chess engine with classical search and MNUE evaluation.
+        </li>
+        <li>
+          <a href="https://github.com/MagnusU0001F984/MagnusMNUE">MagnusMNUE</a>
+          — neural evaluation files and related resources for MagnusChess.
         </li>
       </ul>
     </section>
